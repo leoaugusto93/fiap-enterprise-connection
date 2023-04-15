@@ -2,7 +2,9 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
-import Details from './screens/Details';
+import Experience from './screens/Experience';
+import Formation from './screens/Formation';
+import Hobbie from './screens/Hobbie';
 import Home from './screens/Home';
 import NotFound from './screens/NotFound';
 import NormalizeStyles from './shared/NormalizeStyles';
@@ -10,8 +12,16 @@ import Header from './components/Header/Header';
 
 const router = createBrowserRouter ([
   {
-    path: '/details',
-    element: <Details />,
+    path: '/experience',
+    element: <Experience />,
+  },
+  {
+    path: '/formation',
+    element: <Formation />,
+  },
+  {
+    path: '/hobbie',
+    element: <Hobbie />,
   },
   {
     path: '/',

@@ -1,14 +1,17 @@
 export const Colors = {
+	NAVBAR_COLOR: '#FFC03A',
+	CARD_COLOR: '#191C24',
+	FOOTER_COLOR: '#191C24',
 	NEUTRAL_WHITE: '#FFFFFF',
     NEUTRAL_BLACK: '#000000',
     BLUE_500: '#2196F3',
     BLUE_550: '#217CC3',
-    NAVBAR_COLOR: '#313A46',
     GRAY_200: '#E8E8E8',
     GRAY_400: '#B7B7B7',
     GRAY_600: '#6C6C6C',
     GRAY_700: '#7B7B7B',
     GREEN_800: '#00A152',
+	YELLOW_200: '#FFC03A',
 };
 
 export const FontFamilies = {
@@ -59,6 +62,7 @@ export const Spaces = {
 
 export const BorderRadiuses = {
 	ONE: '4px',
+	TWO: '16px',
 };
 
 export const Shadows = {

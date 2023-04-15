@@ -2,9 +2,7 @@ import styled from "styled-components";
 import {
     Colors,
     Spaces,
-    Shadows,
 } from "../../shared/DesignTokens";
-import esgLogo from "../../assets/images/esg-logo.png";
 
 const Wrapper = styled.header`
     width: 100%;
@@ -15,26 +13,22 @@ const Wrapper = styled.header`
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: ${Shadows.ONE};
 
     @media (min-width: 1024px) {
         height: 90px;
         padding: ${Spaces.TWO};
-        margin-bottom: ${Spaces.EIGHT};
+        margin-bottom: ${Spaces.ONE};
     }
 `;
 
-const Logo = styled.img.attrs({
-    src: esgLogo,
-    alt: 'Logo de "ESG"'
-})`
-    height: 100%
+const Logo = styled.h1`
+    color: ${Colors.NEUTRAL_BLACK};
 `;
 
 export default function Header() {
     return (
         <Wrapper>
-            <Logo />
+            <Logo>Entrerprise Connection</Logo>
         </Wrapper>
     );
 }

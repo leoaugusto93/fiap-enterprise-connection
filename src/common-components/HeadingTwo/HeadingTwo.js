@@ -8,15 +8,14 @@ import {
 } from '../../shared/DesignTokens';
 
 export const HeadingTwo = styled.h2`
+	margin: 0;
+	padding: 0;
     font-family: ${FontFamilies.PRIMARY};
 	font-weight: ${FontWeights.BOLD};
 	line-height: ${FontLineHeights.MEDIUM};
-	font-size: ${FontSizes.THREE};
-	color: ${(props) => props.color};
-	margin: 0;
-	padding: 0;
+	font-size: ${FontSizes.TWO};
+	color: ${Colors.YELLOW_200};
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 `;
-
-HeadingTwo.defaultProps = {
-	color: Colors.NEUTRAL_BLACK,
-};

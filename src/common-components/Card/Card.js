@@ -1,14 +1,14 @@
 import styled from "styled-components";
 import {
     BorderRadiuses,
-    Colors
+    Colors,
 } from "../../shared/DesignTokens";
 
 export const Card = styled.div`
     width: 100%;
     height: 100%;
-    border: 1px solid ${Colors.GRAY_200};
-    border-radius: ${BorderRadiuses.ONE};
+    background-color: ${Colors.CARD_COLOR};
+    border-radius: ${BorderRadiuses.TWO};
 `;
 
 export default Card;

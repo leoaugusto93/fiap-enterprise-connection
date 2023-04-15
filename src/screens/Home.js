@@ -6,6 +6,11 @@ import {
 import { Spaces } from '../shared/DesignTokens';
 import SearchField from '../common-components/SearchField/SearchField';
 import Button from '../common-components/Button/Button';
+import avatarDouglas from "../assets/images/douglas.jpg";
+import avatarErnesto from "../assets/images/ernesto.jpg";
+import avatarGuilerme from "../assets/images/guilherme.jpg";
+import avatarItalo from "../assets/images/italo.jpg";
+import avatarLeonardo from "../assets/images/leonardo.png";
 
 const UserGrid = styled(Box)`
     display: grid;
@@ -37,16 +42,39 @@ export default function Home() {
             </Flex>
             <UserGrid px={[Spaces.ONE, Spaces.TWO]} pb={[Spaces.ONE, Spaces.TWO]}>
                 <UserCard
-                    secretIdentity="Bruce Wayne"
-                    name="Batman"
-                    picture="https://i.uai.com.br/oQyJL4f1KVaK4TvFM2mkZXSfkkI=/750x0/imgsapp2.uai.com.br/app/noticia_133890394703/2023/02/12/317708/batman-nos-quadrinhos-da-dc_1_59778.jpg"
-                    universe="DC Comics"
+                    name="Douglas Jorge Vizzacchi"
+                    phone="(11) 91111 - 1111"
+                    email="email@email.com.br"
+                    cep="04094050"
+                    picture={avatarDouglas}
                 />
                 <UserCard
-                    secretIdentity="Clark Kent"
-                    name="Superman"
-                    picture="https://t.ctcdn.com.br/5h_QCCK3BN14hQljPrRkEPr_C_c=/1245x700/smart/i677638.jpeg"
-                    universe="DC Comics"
+                    name="Ernesto De Oliveira"
+                    phone="(11) 91111 - 1111"
+                    email="email@email.com.br"
+                    cep="05303020"
+                    picture={avatarErnesto}
+                />
+                <UserCard
+                    name="Guilherme Ribas"
+                    phone="(11) 91111 - 1111"
+                    email="email@email.com.br"
+                    cep="05144085"
+                    picture={avatarGuilerme}
+                />
+                <UserCard
+                    name="Ítalo Santos"
+                    phone="(11) 91111 - 1111"
+                    email="email@email.com.br"
+                    cep="01001000"
+                    picture={avatarItalo}
+                />
+                <UserCard
+                    name="Leonardo Augusto"
+                    phone="(11) 91111 - 1111"
+                    email="email@email.com.br"
+                    cep="02510030"
+                    picture={avatarLeonardo}
                 />
             </UserGrid>
         </>

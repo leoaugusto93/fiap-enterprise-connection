@@ -13,7 +13,7 @@ export const Description = styled.span`
     line-height: ${FontLineHeights.SMALL};
     font-size: ${FontSizes.ONE_QUARTER};
     color: ${(props) => props.color};
-    margin: 0;
+    margin: 0 0 1rem 0;
     padding: 0;
 
     strong {
